@@ -23,7 +23,7 @@ def create_r10k_config(host)
   # This will clone the git repository and instantiate an environment per
   # branch in /etc/puppetlabs/code/environments
   :puppetserver-perf-driver:
-    remote: 'git@github.com:puppetlabs/puppetlabs-puppetserver_perf_driver_dev_control'
+    remote: 'git@github.com:camlow325/puppetlabs-puppetserver_perf_driver_dev_control'
     basedir: '/etc/puppetlabs/code/environments'
 EOS
   create_remote_file(host, "#{configdir}/r10k.yaml", r10k_config)
